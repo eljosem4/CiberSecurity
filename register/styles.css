@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    background-image: url(/login/assets/fondo-login.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat:repeat;
+}
+
+#container-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    border: solid 4px rgb(0, 0, 0);
+    background-color: rgb(6, 6, 6);
+    opacity: 0.8;
+}
+
+#titles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#titles h1{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#login-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+
+#email-pass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#email-pass label{
+    display: flex;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+#email-pass input{
+    display: flex;
+    gap: 1rem;
+    background-color: transparent;
+    border: solid 2px grey;
+    color: white;
+}
+
+#login-register a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: .5rem;
+    border: solid 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+#login-register a:hover{
+    transform: scale(1.1);
+}
+#btn-login_register{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#btn-login_register a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/*media*/
+@media(min-width: 1200px){
+
+    #container-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #titles h1{
+        display: flex;
+        font-size: 3rem;
+    }
+
+    #email-pass label{
+        font-size: 2rem;
+    }
+
+    #email-pass input{
+       font-size: 1.5rem;
+    }
+
+    #login-register a{
+        font-size: 1.5rem;
+    }
+
+    #btn-login_register a{
+        font-size: 2rem;
+    }
+}
